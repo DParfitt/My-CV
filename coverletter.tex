@@ -1,0 +1,113 @@
+% !TEX program = xelatex
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-red}
+
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+% Available options: circle|rectangle,edge/noedge,left/right
+\photo[circle,noedge,left]{Img/PP}
+\name{Dillon M.}{Parfitt}
+\position{Mechanical Engineer{\enskip\cdotp\enskip}Computer Enthusiast}
+\address{77, Doreen Street, Colbyn, Pretoria, 0083, Rep. of South Africa}
+
+\mobile{(+27) 82-385-1451}
+\email{dillonparfitt@gmail.com}
+\gitlab{DParfitt}
+\linkedin{dillonparfitt}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+\extrainfo{ID: 9405175022088}
+
+\quote{"I want to put a ding in the universe." - Steve Jobs}
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {Company Recruitment Team}
+  {ESTEQ\\Block 6, Tijgervallei Office Park\\Silverlakes Road, Silverlakes\\Pretoria, South Africa, 0081}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{Job Application for Mechanical Engineer}
+% How the letter is opened
+\letteropening{Dear Mr. Earle,}
+% How the letter is closed
+\letterclosing{Sincerely,}
+% Any enclosures with the letter
+\letterenclosure[Attached]{Curriculum Vitae}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[R]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Dillon M. Parfitt~~~·~~~Cover Letter}
+  {}
+
+% Print the title with above letter informations
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+\lettersection{About Me}
+I am a mechanical engineer with a zeal to advance the engineering profession through the use of technology and innovation. I do not merely accept the status-quo 
+but actively seak out new and innovative ways to propel industry into the next era of technology and design. My willingness to learn is essential to who I am and 
+also to the engineer I see myself becoming. I have a passion for people and the dynamics of teamwork. I explore creative avenues and learn from the expertise of 
+those around me in order to develop optimal solutions to the problems I encounter. 
+
+\lettersection{Why ESTEQ?}
+ESTEQ is a progressive company which strives to empower industry with the help of technology. ESTEQ is on the forefront of implementing solutions to industry that
+give their clients the tools in which to be competitive on a global market. Being closely linked to many international partners, such as Siemens and MSC, puts ESTEQ
+in the unique position to spearhead South Africa into the digital age. I have had the opportunity to work closely with many people in ESTEQ and the company is one 
+which aligns seamlessly with my interests. ESTEQ is a place in which I can learn, grow and make a difference in. I have experienced the excellence that ESTEQ offers
+and this is why I want to join the ESTEQ team. 
+
+\lettersection{Why Me?}
+I am fascinated by innovation. When I am inspired, I do more than what is expected of me. I am quick to learn and self-motivated. Technology and software are my forte 
+and I excel in problem solving. I enjoy working in collaborative teams and creating an outcome which I would not be possible by myself. I believe that my interests and 
+skills can make a positive impact within ESTEQ. I have gained experience in the Siemens software through training provided by ESTEQ as well as using the software on a
+daily basis. This gives me an advantage within ESTEQ as I already have a solid foundation and I am eager to master the skills I already posses. 
+
+
+\end{cvletter}
+
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter informations
+\makeletterclosing
+
+\end{document}
